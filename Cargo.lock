@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "sat-solver"
+name = "sat_solver"
 version = "0.1.0"

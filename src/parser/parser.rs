@@ -1,3 +1,11 @@
+use std::path::Path;
+use std::fs::File;
+use std::io::{self, BufRead};
+
+use crate::models::clause::Clause;
+use crate::models::formula::Formula;
+use crate::models::literal::Literal;
+
 pub fn parse_dimacs(path: impl AsRef<Path>) -> io::Result<Formula> {
     let file = File::open(path)?;
     let reader = io::BufReader::new(file);
