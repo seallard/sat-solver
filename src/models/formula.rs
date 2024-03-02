@@ -1,3 +1,3 @@
-use crate::models::Clause;
+use crate::models::clause::Clause;
 
 pub type Formula = Vec<Clause>;
